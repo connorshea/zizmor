@@ -16,6 +16,11 @@ of `zizmor`.
 
     Many thanks to @andrew for proposing and implementing this improvement!
 
+* **New audit**: [adhoc-packages] detects `run:` steps that install packages
+  ad hoc, outside of a lockfile (#2057)
+
+    The initial implementation flags `gem install <pkg>` invocations.
+
 ### Enhancements 🌱
 
 * The [cache-poisoning] audit now detects additional cache disablement
@@ -1863,5 +1868,6 @@ This is one of `zizmor`'s bigger recent releases! Key enhancements include:
 [github-app]: ./audits.md#github-app
 [unpinned-tools]: ./audits.md#unpinned-tools
 [typosquat-uses]: ./audits.md#typosquat-uses
+[adhoc-packages]: ./audits.md#adhoc-packages
 
 [exit code]: ./usage.md#exit-codes
